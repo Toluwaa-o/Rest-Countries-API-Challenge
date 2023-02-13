@@ -39,7 +39,7 @@ async function fetchData(){
     result.forEach(country => {
         container.insertAdjacentHTML('beforeend', `
         <div class='card'>
-        <img src='${country.flags.png}' alt='${country.name.official}'>
+        <img src='${country.flags.png}' alt='country flag'>
         <div>
         <h2 class='cname'>${country.name.official}</h2>
         <p>Population: <span>${country.population.toLocaleString('en-US')}</span></p>
